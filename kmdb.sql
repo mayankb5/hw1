@@ -114,8 +114,8 @@ INSERT INTO movies (
   director
 )
 VALUES (
-  "Batman Begins", 
-  "2005",
+  "The Dark Knight", 
+  "2008",
   "PG-13",
   "Christopher Nolan"
 );
@@ -127,8 +127,8 @@ INSERT INTO movies (
   director
 )
 VALUES (
-  "Batman Begins", 
-  "2005",
+  "The Dark Knight Rises", 
+  "2012",
   "PG-13",
   "Christopher Nolan"
 );
@@ -151,6 +151,50 @@ INSERT INTO top_cast (
 )
 VALUES (
   "Batman Begins", 
+  "Michael Caine",
+  "Alfred"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "Batman Begins", 
+  "Liam Neeson",
+  "Ra's Al Ghul"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "Batman Begins", 
+  "Katie Holmes",
+  "Rachel Dawes"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "Batman Begins", 
+  "Gary Oldman",
+  "Commissioner Gordon"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "The Dark Knight", 
   "Christian Bale",
   "Bruce Wayne"
 );
@@ -161,7 +205,51 @@ INSERT INTO top_cast (
   characters
 )
 VALUES (
-  "Batman Begins", 
+  "The Dark Knight", 
+  "Heath Ledger",
+  "Joker"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "The Dark Knight", 
+  "Aaron Eckhart",
+  "Harvey Dent"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "The Dark Knight", 
+  "Michael Caine",
+  "Alfred"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "The Dark Knight", 
+  "Maggie Gyllenhaal",
+  "Rachel Dawes"
+);
+
+INSERT INTO top_cast (
+  movie,
+  actor,
+  characters
+)
+VALUES (
+  "The Dark Knight Rises", 
   "Christian Bale",
   "Bruce Wayne"
 );
@@ -172,9 +260,9 @@ INSERT INTO top_cast (
   characters
 )
 VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
+  "The Dark Knight Rises", 
+  "Gary Oldman",
+  "Commissioner Gordon"
 );
 
 INSERT INTO top_cast (
@@ -183,9 +271,9 @@ INSERT INTO top_cast (
   characters
 )
 VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
+  "The Dark Knight Rises", 
+  "Tom Hardy",
+  "Bane"
 );
 
 INSERT INTO top_cast (
@@ -194,9 +282,9 @@ INSERT INTO top_cast (
   characters
 )
 VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
+  "The Dark Knight Rises", 
+  "Joesph Gordon-Levitt",
+  "John Blake"
 );
 
 INSERT INTO top_cast (
@@ -205,99 +293,10 @@ INSERT INTO top_cast (
   characters
 )
 VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
+  "The Dark Knight Rises", 
+  "Anne Hathaway",
+  "Selina Kyle"
 );
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
-INSERT INTO top_cast (
-  movie,
-  actor,
-  characters
-)
-VALUES (
-  "Batman Begins", 
-  "Christian Bale",
-  "Bruce Wayne"
-);
-
 
 -- Prints a header for the movies output
 .print "Movies"
