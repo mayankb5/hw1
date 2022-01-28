@@ -85,9 +85,10 @@ CREATE TABLE movies (
 
 CREATE TABLE top_cast (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  movie TEXT,
+  movies_id INTEGER,
   actor TEXT,
   characters TEXT
+
 );
 
 -- Insert data into your database that reflects the sample data shown above
@@ -134,166 +135,166 @@ VALUES (
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "Batman Begins", 
+  1, 
   "Christian Bale",
   "Bruce Wayne"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "Batman Begins", 
+  1, 
   "Michael Caine",
   "Alfred"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "Batman Begins", 
+  1, 
   "Liam Neeson",
   "Ra's Al Ghul"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "Batman Begins", 
+  1, 
   "Katie Holmes",
   "Rachel Dawes"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "Batman Begins", 
+  1, 
   "Gary Oldman",
   "Commissioner Gordon"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight", 
+  2, 
   "Christian Bale",
   "Bruce Wayne"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight", 
+  2, 
   "Heath Ledger",
   "Joker"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight", 
+  2, 
   "Aaron Eckhart",
   "Harvey Dent"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight", 
+  2, 
   "Michael Caine",
   "Alfred"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight", 
+  2, 
   "Maggie Gyllenhaal",
   "Rachel Dawes"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight Rises", 
+  3, 
   "Christian Bale",
   "Bruce Wayne"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight Rises", 
+  3, 
   "Gary Oldman",
   "Commissioner Gordon"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight Rises", 
+  3, 
   "Tom Hardy",
   "Bane"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight Rises", 
+  3, 
   "Joesph Gordon-Levitt",
   "John Blake"
 );
 
 INSERT INTO top_cast (
-  movie,
+  movies_id,
   actor,
   characters
 )
 VALUES (
-  "The Dark Knight Rises", 
+  3, 
   "Anne Hathaway",
   "Selina Kyle"
 );
@@ -317,4 +318,4 @@ SELECT movie, year, MPAA, director FROM movies;
 
 -- The SQL statement for the cast output
 -- TODO!
-SELECT movie, actor, characters FROM top_cast;
+SELECT movies.movie, top_cast.actor, top_cast.characters FROM top_cast INNER JOIN movies ON movies.id = top_cast.movies_id;
